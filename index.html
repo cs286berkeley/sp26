@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS286 Graduate Data Systems @ Berkeley (Spring 2026) | CS286</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="berkeley-seal.png" alt="UC Berkeley Seal" class="seal">
+        <div class="banner-text">
+            <h1>CS286</h1>
+            <p>Graduate Data Systems @ Berkeley</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>CS286 Graduate Data Systems @ Berkeley (Spring 2026)</h1>
+            
+            <div class="course-info">
+                <p><strong>When</strong>: <em>Monday/Wednesday 9:00-10:29 AM</em></p>
+                <p><strong>Where</strong>: <em>Soda 606</em></p>
+                <p><strong>Instructor</strong>: Aditya Parameswaran</p>
+                <p><strong>Office Hours:</strong> After class on Wednesday, or by appointment.</p>
+            </div>
+        </header>
+
+        <section id="description">
+            <h2>Course Description</h2>
+            <p>
+                The data systems field, with its roots
+                in database systems, 
+                has been exploring issues in 
+                data storage, management, processing, and analysis for over 50 years. 
+                Over this time, it has evolved from supporting 
+                business record-keeping to becoming 
+                a foundational pillar of modern computing.
+                Data systems today underpin nearly every end-user application, 
+                enable insight discovery over massive datasets, 
+                and have given rise to multiple billion-dollar industries. 
+                In our data-rich 21st century, 
+                the lessons of the field apply 
+                increasingly broadly across computing and beyond.
+            </p>
+            <p>
+                Indeed, the data systems field—by virtue of its focus on humans and applications interacting with data at scale—represents a natural cross-section of computer science. 
+                The field spans and integrates ideas from systems, theory, programming languages, computer architecture, and human–computer interaction, among others. 
+                As such, it serves as a unifying lens through which many fundamental trade-offs in computing can be understood.
+            </p>
+            <p>
+                In this course we will study a range of papers 
+                from both the distant and recent past. 
+                Given the breadth of the field, it is not possible to cover it comprehensively. 
+                Our focus will largely be on core topics in data systems
+                that are still relevant today. 
+                While the emphasis will be on more systems-oriented perspectives, 
+                we will not shy away from theoretical results where relevant. 
+                The readings will mix classic papers that have stood the test of time, 
+                alongside emerging new topics, 
+                and revisit topics that may be ripe 
+                for revival given current technology trends.
+            </p>
+        </section>
+
+        <section id="prerequisites">
+            <h2>Prerequisites</h2>
+            <p>
+                The class is open to graduate students, as well as advanced undergraduates. 
+                If you're an undergraduate and would like to enroll, 
+                please fill out this form <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_J5-_ESeUr1sfwhEHkoptOHtPbcDXxrNQrKxchqLHznUY6w/viewform">here</a>.  
+                I am happy to consider undergraduates 
+                who have adequate background, especially with CS 186 (and possibly Data 101). 
+                Experience taking a graduate research class such as CS 262 or 
+                experience working on research in data systems/hands-on development
+                with data systems is a plus.
+            </p>
+            <p>
+                If this is your first exposure to a graduate paper-reading-oriented class, here are some useful references: 
+                <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf">How to Read a Paper</a> and 
+                <a href="https://people.inf.ethz.ch/troscoe/pubs/review-writing.pdf">Writing Reviews for Systems Conferences</a>.
+            </p>
+        </section>
+
+        <section id="format">
+            <h2>Course Format</h2>
+            <p>
+                <strong>This is a graduate seminar, and student participation is a key part of the experience. The course will be held in-person, and regular attendance is mandatory.</strong>
+            </p>
+            <p>
+                The bulk of the course will involve learning from research papers, both classics and recent results. Students will be expected to read papers in advance of class, and participate in class discussion. Students will also undertake independent research as part of the course.
+            </p>
+            <p>Grading breakdown will be as follows:</p>
+            <ul>
+                <li><strong>Project:</strong> <em>75%</em></li>
+                <li><strong>Weekly Summaries:</strong> <em>10%</em>. Fill in using a Google form before class, lightly graded; 
+                    read all assigned papers per class, and pick one for which you share something interesting you took away
+                    (i.e., a short para, even 3-4 lines OK!)—not an LLM-generated summary.  
+                    Skip any four classes.</li>
+                <li><strong>Class Participation:</strong> <em>15%</em>. Attending and asking and answering questions, comments, feedback, etc. Depending on class size, class participation could possibly include an in-class presentation of a research paper.</li>
+            </ul>
+        </section>
+
+        <section id="history">
+            <h2>History</h2>
+            <p>Previous course offerings:</p>
+            <ul>
+                <li>Spring 2024: <a href="https://cs286berkeley.net/">https://cs286berkeley.net/</a></li>
+                <li>Spring 2020: <a href="https://cs286berkeley.net/sp20">https://cs286berkeley.net/sp20</a></li>
+            </ul>
+        </section>
+
+        <section id="syllabus">
+            <h2>Syllabus</h2>
+            <table class="syllabus-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Section</th>
+                        <th>Topic</th>
+                        <th>Lecture Notes</th>
+                        <th>Paper 1</th>
+                        <th>Paper 2</th>
+                        <th>Additional Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="no-class">
+                        <td>Wed, Jan 21</td>
+                        <td>CIDR: No Class</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Jan 26</td>
+                        <td>Classics</td>
+                        <td>Architecture</td>
+                        <td></td>
+                        <td><a href="https://courses.cs.washington.edu/courses/cse544/21wi/papers/DBArchitecture.pdf" target="_blank">Architecture of a Database System</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Jan 28</td>
+                        <td></td>
+                        <td>Data Models</td>
+                        <td></td>
+                        <td><a href="https://dsf.berkeley.edu/cs286/papers/goesaround-redbook2005.pdf" target="_blank">What Goes Around Comes Around</a></td>
+                        <td><a href="https://db.cs.cmu.edu/papers/2024/whatgoesaround-sigmodrec2024.pdf" target="_blank">What Goes Around Comes Around... And Around</a></td>
+                        <td><a href="https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf" target="_blank">A Relational Model of Data</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Feb 2</td>
+                        <td></td>
+                        <td>IBM Legacy</td>
+                        <td></td>
+                        <td><a href="https://web.stanford.edu/class/cs345d-01/rl/selinger.pdf" target="_blank">Access Path Selection in a Relational Database Management System</a></td>
+                        <td><a href="https://people.csail.mit.edu/tdanford/6830papers/gray-lock-granularity.pdf" target="_blank">Granularity of Locks and Degrees of Consistency</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Feb 4</td>
+                        <td></td>
+                        <td>Berkeley Legacy</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Feb 9</td>
+                        <td></td>
+                        <td>Wisconsin Legacy</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Feb 11</td>
+                        <td>Transactions</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="no-class">
+                        <td>Mon, Feb 16</td>
+                        <td>Holiday: No Class</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Feb 18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Feb 23</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Feb 25</td>
+                        <td>Query Processing and Optimization</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Mar 2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Mar 4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Mar 9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Mar 11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Mar 16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Mar 18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="no-class">
+                        <td>Mon, Mar 23</td>
+                        <td>Holiday: No Class</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="no-class">
+                        <td>Wed, Mar 25</td>
+                        <td>Holiday: No Class</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Mar 30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Apr 1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Apr 6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Apr 8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Apr 13</td>
+                        <td>Dagstuhl</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Apr 15</td>
+                        <td>Dagstuhl</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Apr 20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Apr 22</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, Apr 27</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Wed, Apr 29</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
