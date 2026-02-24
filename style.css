@@ -136,6 +136,13 @@ section h2 {
     background-color: #ffe69c;
 }
 
+.syllabus-special-note {
+    font-weight: 600;
+    color: #003262;
+    display: block;
+    margin-top: 4px;
+}
+
 .syllabus-table a {
     color: #003262;
     text-decoration: none;
