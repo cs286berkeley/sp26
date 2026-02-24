@@ -120,6 +120,22 @@ section h2 {
     background-color: #ffe69c; /* Slightly darker on hover */
 }
 
+.syllabus-table tr.special-seminar {
+    background-color: #d4edda; /* Light green for special seminar */
+}
+
+.syllabus-table tr.special-seminar:hover {
+    background-color: #c3e6cb;
+}
+
+.syllabus-table tr.faculty-retreat {
+    background-color: #fff3cd; /* Yellow highlight */
+}
+
+.syllabus-table tr.faculty-retreat:hover {
+    background-color: #ffe69c;
+}
+
 .syllabus-table a {
     color: #003262;
     text-decoration: none;
