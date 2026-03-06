@@ -136,6 +136,14 @@ section h2 {
     background-color: #ffe69c;
 }
 
+.syllabus-table tr.optional-session {
+    background-color: #cce5ff; /* Light blue for optional sessions */
+}
+
+.syllabus-table tr.optional-session:hover {
+    background-color: #b3d7ff;
+}
+
 .syllabus-special-note {
     font-weight: 600;
     color: #003262;
